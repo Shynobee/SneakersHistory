@@ -5,13 +5,17 @@ import {
   withStyles,
   AppBar,
   Toolbar,
-  Button
+  Button,
 } from '@material-ui/core';
+import { SearchBar } from './NavBarElements/components/SearchBar';
 
 const styles = withStyles({
   root: {
     width: '100vh'
   },
+  textField: {
+
+  }
 });
 
 class NavBar extends React.Component {
@@ -24,23 +28,27 @@ class NavBar extends React.Component {
         <AppBar position="static" color="default">
           <Toolbar>
             <Button>
-                Sneakers History
+              Sneakers History
             </Button>
             <Button>
-                Nike
+              Nike
             </Button>
             <Button>
-                Jordan
+              Jordan
             </Button>
             <Button>
-                Adidas
+              Adidas
             </Button>
             <Button>
-                Saucony
+              Saucony
             </Button>
             <Button>
-                Diadora
+              Diadora
             </Button>
+            <Button>
+              Future Release
+            </Button>
+            <SearchBar />
           </Toolbar>
         </AppBar>
       </div>
