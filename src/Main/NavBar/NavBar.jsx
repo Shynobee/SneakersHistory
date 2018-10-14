@@ -1,22 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { link } from 'react-router';
 import {
   withStyles,
   AppBar,
   Toolbar,
-  Typography
+  Typography,
+  Button
 } from '@material-ui/core';
 
-const styles = {
+const styles = withStyles({
   root: {
-    flexGrow: 1,
+    width: '100vh'
   },
-};
+});
 
 class NavBar extends React.Component {
-  constructor(props) {
-    super(props)
-  }
+
   render() {
     const { classes } = this.props;
     return (
@@ -24,14 +24,41 @@ class NavBar extends React.Component {
       <div className={classes.root}>
         <AppBar position="static" color="default">
           <Toolbar>
-            <Typography variant="h6" color="inherit">
-              Sneakers History
-            </Typography>
+            <Button>
+              <Typography variant="h6" color="inherit">
+                Sneakers History
+              </Typography>
+            </Button>
+            <Button>
+              <Typography variant="h6" color="inherit">
+                Nike
+              </Typography>
+            </Button>
+            <Button>
+              <Typography variant="h6" color="inherit">
+                Jordan
+              </Typography>
+            </Button>
+            <Button>
+              <Typography variant="h6" color="inherit">
+                Adidas
+              </Typography>
+            </Button>
+            <Button>
+              <Typography variant="h6" color="inherit">
+                Saucony
+              </Typography>
+            </Button>
+            <Button>
+              <Typography variant="h6" color="inherit">
+                Diadora
+              </Typography>
+            </Button>
           </Toolbar>
         </AppBar>
       </div>
     );
-  } 
+  }
 }
 
 NavBar.propTypes = {

@@ -1,14 +1,22 @@
-import { styles } from '@material-ui/core';
+import { withStyles } from '@material-ui/core';
 import React, { Component } from 'react';
 
-class Body extends Component {
-    render() {
-        return (
-            <div className="root">
+const styles = withStyles({
+  root: {
+    margin: 0
+  },
+});
 
-            </div>
-        );
-    }
+class Body extends Component {
+  render() {
+    return (
+      <div className="root">
+
+      </div>
+    );
+  }
 }
 
-export default Body;
+const BodyWithStyle = withStyles(styles)(Body);
+
+export default BodyWithStyle;
