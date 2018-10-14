@@ -9,7 +9,8 @@
     "react-dom": "^16.5.2",
     "react-i18next": "^8.0.7",
     "react-router": "^4.3.1",
-    "react-scripts": "2.0.4"
+    "react-scripts": "2.0.4",
+    "react-test-renderer": "^16.5.2"
   },
   "scripts": {
     "start": "react-scripts start",
