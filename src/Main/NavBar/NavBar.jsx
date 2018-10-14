@@ -5,7 +5,6 @@ import {
   withStyles,
   AppBar,
   Toolbar,
-  Typography,
   Button
 } from '@material-ui/core';
 
@@ -25,34 +24,22 @@ class NavBar extends React.Component {
         <AppBar position="static" color="default">
           <Toolbar>
             <Button>
-              <Typography variant="h6" color="inherit">
                 Sneakers History
-              </Typography>
             </Button>
             <Button>
-              <Typography variant="h6" color="inherit">
                 Nike
-              </Typography>
             </Button>
             <Button>
-              <Typography variant="h6" color="inherit">
                 Jordan
-              </Typography>
             </Button>
             <Button>
-              <Typography variant="h6" color="inherit">
                 Adidas
-              </Typography>
             </Button>
             <Button>
-              <Typography variant="h6" color="inherit">
                 Saucony
-              </Typography>
             </Button>
             <Button>
-              <Typography variant="h6" color="inherit">
                 Diadora
-              </Typography>
             </Button>
           </Toolbar>
         </AppBar>
